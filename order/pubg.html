@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUBG - UC</title>
+    <link rel="stylesheet" href="pubg.css">
+</head>
+<body>
+    <!-- Header with Back Button -->
+    <header>
+        <button class="back-btn" onclick="window.location.href='../home.html'">
+            <img src="https://cdn-icons-png.flaticon.com/512/93/93634.png" alt="Back" class="back-icon"> Back
+        </button>
+    </header>
+
+    <!-- Selection Menu -->
+    <div class="menu-container">
+        <button class="menu-btn" onclick="showItems('PUBG-UC')">UC</button>
+    </div>
+
+    <!-- Item Container -->
+    <div class="item-container" id="item-container">
+        <p>Select a category above to view products.</p>
+    </div>
+
+    <script src="products.js"></script>
+    <script src="pubg.js"></script>
+</body>
+</html>

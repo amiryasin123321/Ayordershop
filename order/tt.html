@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiktok shop</title>
+    <link rel="stylesheet" href="all.css">
+</head>
+<body>
+    <!-- Header with Back Button -->
+    <header>
+        <button class="back-btn" onclick="window.location.href='../home.html'">
+            <img src="https://cdn-icons-png.flaticon.com/512/93/93634.png" alt="Back" class="back-icon"> Back
+        </button>
+    </header>
+
+    <!-- Selection Menu -->
+    <div class="menu-container">
+        <button class="menu-btn" onclick="showItems('Tt-coin')">Tiktok coin</button>
+        <button class="menu-btn" onclick="showItems('Tt-follower')">Tiktok followers</button>
+        <button class="menu-btn" onclick="showItems('Tt-like')">Tiktok like</button>
+        <button class="menu-btn" onclick="showItems('Tt-view')">Tiktok view</button>
+    </div>
+
+    <!-- Item Container -->
+    <div class="item-container" id="item-container">
+        <p>Select a category above to view products.</p>
+    </div>
+
+    <script src="products.js"></script>
+    <script src="tt.js"></script>
+</body>
+</html>
