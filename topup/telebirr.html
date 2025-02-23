@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Up with Telebirr</title>
+    <link rel="stylesheet" href="telebirr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header with Back Button -->
+    <div class="header">
+        <button class="back-btn" onclick="window.location.href='../topup.html'">
+            <img src="https://cdn-icons-png.flaticon.com/512/93/93634.png" alt="Back" class="back-icon"> Back
+        </button>
+        <h2>Top Up with Telebirr</h2>
+    </div>
+
+    <div class="container">
+        <h3>Pay with Telebirr</h3>
+        <div class="telebirr-info">
+            <p><strong>Telebirr Phone Number:</strong> 
+                <span id="phoneNumber">+251984681084</span>
+                <i class="fas fa-copy copy-icon" onclick="copyPhoneNumber()"></i>
+            </p>
+            <p><strong>Recipient:</strong> Momina Shamsha</p>
+        </div>
+
+        <label for="amount">Amount (ETB):</label>
+        <input type="number" id="amount" placeholder="Enter amount" inputmode="numeric">
+
+        <label for="transactionId">Transaction ID:</label>
+        <input type="text" id="transactionId" placeholder="Enter Transaction ID">
+
+        <label for="screenshot">Upload Screenshot:</label>
+        <input type="file" id="screenshot" accept="image/*">
+
+        <button class="submit-btn" onclick="submitPaymentProof()">Submit Payment Proof</button>
+    </div>
+
+    <script src="telebirr.js"></script>
+</body>
+</html>

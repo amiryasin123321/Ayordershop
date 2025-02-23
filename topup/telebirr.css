@@ -1,0 +1,199 @@
+/* --- Importing a Cool Font --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* --- Global Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --- Body Background with Subtle Animation --- */
+body {
+    background: linear-gradient(135deg, #dbeafe, #a5b4fc);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: gradientMove 10s infinite alternate;
+}
+
+/* --- Gradient Animation --- */
+@keyframes gradientMove {
+    from {
+        background: linear-gradient(135deg, #dbeafe, #a5b4fc);
+    }
+    to {
+        background: linear-gradient(135deg, #a5b4fc, #6366f1);
+    }
+}
+
+/* --- Header with Floating Effect --- */
+.header {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 15px 20px;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+/* --- Back Button --- */
+.back-btn {
+    position: absolute;
+    left: 15px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4f46e5;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.back-btn img {
+    width: 20px;
+    margin-right: 8px;
+}
+
+.back-btn:hover {
+    color: #312e81;
+    transform: scale(1.1);
+}
+
+/* --- Form Container with Glassmorphism Effect --- */
+.container {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(20px);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    text-align: left;
+    margin-top: 100px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.container h3 {
+    text-align: center;
+    gap: 10px;
+}
+.header h2 {
+    font-size: 18px; /* Smaller font size */
+    text-align: right; /* Align text to the left */
+    margin-left: 15px; /* Add some left margin for spacing */
+    font-weight: 600; /* Slightly bold for clarity */
+    color: #333; /* Dark gray color for better visibility */
+}
+
+/* --- Payment Info Section --- */
+.telebirr-info {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* --- Copy Icon --- */
+.copy-icon {
+    cursor: pointer;
+    text-align: right;
+    color: #4f46e5;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.copy-icon:hover {
+    color: #312e81;
+    transform: scale(1.2);
+}
+
+/* --- Input Fields --- */
+label {
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #444;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    color: #222;
+}
+
+input:focus {
+    border: 2px solid #6366f1;
+    box-shadow: 0px 0px 10px rgba(99, 102, 241, 0.5);
+}
+
+/* --- Submit Button with Glow Effect --- */
+.submit-btn {
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+/* --- Button Glow Effect --- */
+.submit-btn::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(99, 102, 241, 0.5);
+}
+
+.submit-btn:hover::before {
+    opacity: 1;
+}
+
+/* --- Animation for Fade-in Effect --- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
