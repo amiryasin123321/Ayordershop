@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AY Order Shop - Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to AY Order Shop</h2>
+        <p>Sign up using your Telegram account.</p>
+        
+        <div id="step1" class="step">
+            <label for="telegramId">Enter your Telegram ID:</label>
+            <input type="text" id="telegramId" placeholder="Enter your Telegram ID">
+            <button class="btn send-code-btn" onclick="sendCode()">Send Code</button>
+        </div>
+        <div id="error-message" style="color: orangered; margin-top: 20px;"></div>
+
+        <div id="step2" class="step" style="display:none;">
+            <label for="verifyCode">Enter the 4-digit code from Telegram Bot @Ayallbot:</label>
+            <input type="text" id="verifyCode" placeholder="Enter code">
+            <button class="btn verify-btn" onclick="verifyCode()">Verify</button>
+        </div>
+
+        <div id="userInfo" style="display: none;">
+            <div id="telegramPic" class="telegram-pic"></div>
+            <p id="telegramName"></p>
+            <p id="noPicMessage" style="display: none;">This user has no profile picture.</p>
+        </div>
+
+        <div id="step3" class="step" style="display:none;">
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+
+            <div class="input-group">
+                <label for="phone">Phone (+251):</label>
+                <input type="tel" id="phone" placeholder="9-digit phone number" inputmode="numeric">
+                <button class="btn create-btn" onclick="saveAccount()">Create Account</button>
+            </div>
+        </div>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<!-- Header with Back Button -->
+<header>
+    <a href="home.html">
+        <img src="https://cdn-icons-png.flaticon.com/512/93/93634.png" alt="Back" class="back-icon">
+    </a>
+    <p>Your Cart ordered</p>
+</header>
+
+<!-- Cart Items -->
+<div id="cart-items" class="cart-container">
+    <!-- Cart items will be populated here using JavaScript -->
+</div>
+
+<!-- Total Price -->
+<div id="total-price" class="total-price-container">
+    Total: <span id="total-amount">0 BIRR</span>
+</div>
+
+<!-- Order Button -->
+<div class="order-container">
+    <button class="order-button">
+        <img src="https://cdn-icons-png.flaticon.com/512/33/33738.png" alt="Order Icon" class="order-icon"> 
+        Place Order
+    </button>
+</div>
+
+<script src="cart.js"></script>
+</body>
+</html>

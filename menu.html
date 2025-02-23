@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="menu.css"> <!-- Link to CSS for styling -->
+</head>
+<body>
+
+<!-- 🍔 Hamburger Menu -->
+<div id="hamburger-menu">
+    <span id="hamburger-icon">&#9776;</span> <!-- Three-line menu icon -->
+    <div id="menu-items" class="hidden">
+        <a href="home.html" id="home-link">
+            <img src="https://cdn-icons-png.flaticon.com/512/1946/1946488.png" alt="Home"> Home
+        </a>
+        <a href="cart.html" id="cart-button">
+            <img src="https://cdn-icons-png.flaticon.com/512/1077/1077976.png" alt="Cart"> Cart
+        </a>
+        <a href="topup.html" id="topup-link">
+            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828869.png" alt="Top-Up"> Top-Up & Balance
+        </a>
+        <a href="contact.html" id="contact-link">
+            <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="Contact"> Contact
+        </a>
+        <a href="account.html" id="account-link">
+            <img src="https://cdn-icons-png.flaticon.com/512/456/456212.png" alt="Account"> Account
+        </a>
+    </div>
+</div>
+
+<script>
+    // Toggle menu on click
+    document.getElementById("hamburger-icon").addEventListener("click", function () {
+        document.getElementById("menu-items").classList.toggle("hidden");
+    });
+</script>
+
+</body>
+</html>

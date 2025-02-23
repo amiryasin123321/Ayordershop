@@ -1,0 +1,104 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Header with Back Button */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.back-btn:hover {
+    color: #ff4d4d;
+}
+
+.back-icon {
+    width: 24px; /* Adjusted size for better alignment */
+    height: 24px;
+    margin-right: 8px;
+}
+
+/* Profile Section */
+.profile-section {
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    margin-bottom: 10px;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Info Section */
+.info-section {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.info-section p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Logout Button */
+.logout-btn {
+    padding: 10px 15px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+.logout-btn:hover {
+    background: #e60000;
+    transform: scale(1.05);
+}

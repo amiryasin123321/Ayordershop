@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Up</title>
+    <link rel="stylesheet" href="topup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- FontAwesome for the copy icon -->
+</head>
+<body>
+    <!-- Header with Back Button -->
+    <div class="header">
+        <button class="back-btn" onclick="window.location.href='home.html'">
+            <img src="https://cdn-icons-png.flaticon.com/512/93/93634.png" alt="Back" class="back-icon">Back
+        </button>
+        <h2>Top Up</h2>
+    </div>
+
+    <div class="container">
+        <h3>Choose a method for top-up</h3>
+        <button class="payment-option" onclick="window.location.href='topup/telebirr.html'">Telebirr</button>
+        <button class="payment-option" onclick="openMpesa()">M-Pesa (Coming Soon)</button>
+        <button class="balance-btn" onclick="checkBalance()">Check Balance</button>
+    </div>
+
+    <script>
+        // Placeholder function for M-Pesa (you can implement later)
+        function openMpesa() {
+            alert("M-Pesa payment method will be available soon.");
+        }
+
+        // Placeholder function for checking balance
+        function checkBalance() {
+            alert("Balance feature coming soon.");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ay Order Shop</title>
+    <link rel="stylesheet" href="homestyles.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <span>Welcome to Ay Order Shop</span>
+    <!-- Hamburger Menu -->
+    <div id="hamburger-menu">
+        <div id="hamburger-icon" onclick="toggleMenu()">
+            <img src="https://cdn-icons-png.flaticon.com/512/3502/3502458.png" alt="Hamburger Menu">
+        </div>
+        <div id="menu-items">
+          <a href="#" onclick="openPage('home')">
+            <img src="https://cdn-icons-png.flaticon.com/512/1946/1946488.png" alt="Home Icon" width="20">Home
+          </a>
+            <a href="#" onclick="openPage('account')">
+                <img src="https://cdn-icons-png.flaticon.com/512/3033/3033143.png" alt="Account Icon" width="20">Account
+            </a>
+            <a href="#" onclick="openPage('cart')">
+                <img src="https://cdn-icons-png.flaticon.com/512/3737/3737372.png" alt="Cart Icon" width="20">Cart
+            </a>
+            <a href="#" onclick="openPage('topup')">
+                <img src="https://cdn-icons-png.flaticon.com/512/6645/6645460.png" alt="Top Up Icon" width="20">Top Up & balance 
+            </a>
+            <a href="#" onclick="openPage('contact')">
+                <img src="https://cdn-icons-png.flaticon.com/512/3095/3095583.png" alt="Contact Icon" width="20">Contact
+            </a>
+        </div>
+    </div>
+</header>
+
+<!-- Main Homepage Section -->
+<div id="homepage">
+    <h1>Game</h1>
+    <div id="category-buttons">
+        <!-- Game Category -->
+        <div class="category-group">
+            <div class="category-item">
+                <div class="category-content">
+                    <img src="photos/ff.png" alt="Free Fire Icon" width="100">
+                    <div>
+                        <p>Free Fire</p>
+                        <p class="category-description">Unlock the ultimate Free Fire experience! 🎮 Get Free Fire diamonds and exclusive items now! 💎 Click the 'Buy' button to grab your favorites and level up your game today! ✨</p>
+                        <button class="category-button" onclick="window.location.href='order/freefire.html'">Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="category-item">
+                <div class="category-content">
+                    <img src="photos/pubg.png" alt="PUBG Icon" width="100">
+                    <div>
+                        <p>PUBG</p>
+                        <p class="category-description">Unlock the ultimate PUBG experience! 🎮 Get UC and exclusive skins now! 💥 <b>Click the 'Buy' button</b> to grab your favorites and dominate the battleground today! 🚀✨</p>
+                        <button class="category-button" onclick="window.location.href='order/pubg.html'">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Media Category -->
+        <div class="category-group">
+            <h1>Social Media</h1>
+            <div class="category-item">
+                <div class="category-content">
+                    <img src="photos/tg.png" alt="Telegram Icon" width="100">
+                    <div>
+                        <p>Telegram</p>
+                        <p class="category-description">Upgrade your Telegram experience! 🌟 Get <b>Telegram Premium</b> and <b>Stars</b> now to unlock exclusive features, custom themes, and more! 💎 <b>Click the 'Buy' button</b> to elevate your messaging game today! 🚀✨</p>
+                        <button class="category-button" onclick="window.location.href='order/tg.html'">Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="category-item">
+                <div class="category-content">
+                    <img src="photos/ig.png" alt="Instagram Icon" width="100">
+                    <div>
+                        <p>Instagram</p>
+                        <p class="category-description">Boost your Instagram game instantly! 🚀 Get <b>real followers, likes, and views</b> to grow your profile and stand out! 🌟 <b>Click the 'Buy' button</b> to skyrocket your social media presence today! 💥✨</p>
+                        <button class="category-button" onclick="window.location.href='order/ig.html'">Buy</button>
+                    </div>
+                </div>
+            </div>
+            <div class="category-item">
+                <div class="category-content">
+                    <img src="photos/tt.png" alt="TikTok Icon" width="100">
+                    <div>
+                        <p>TikTok</p>
+                        <p class="category-description">Level up your TikTok game! 🚀 Get <b>real followers, likes, views, and coins</b> to grow your profile, go viral, and unlock amazing features! 🌟 <b>Click the 'Buy' button</b> to boost your TikTok fame today! 💰✨</p>
+                        <button class="category-button" onclick="window.location.href='order/tt.html'">Buy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Back Button -->
+<div id="back-button-container" style="display: none;">
+    <button class="category-button" onclick="window.history.back()">Back</button>
+</div>
+
+<script src="homescript.js"></script>
+</body>
+</html>

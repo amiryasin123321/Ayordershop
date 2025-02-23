@@ -1,0 +1,233 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling (Restored to Original) */
+body {
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* Original Background */
+    color: #fff;
+    line-height: 1.6;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container Styling */
+.main-content {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 1200px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.5s ease-in-out;
+    margin-top: 50px; /* Spacing from header */
+}
+
+/* Header Styling */
+header {
+    background: rgba(30, 60, 114, 0.8); /* Darker background for header */
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 5px solid #ff9a9e; /* Border to separate header */
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 70;
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Description Section Styling */
+.description {
+    margin-bottom: 40px;
+}
+
+.description p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    color: #e0e0e0;
+}
+
+.description h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #ff9a9e;
+    animation: slideInLeft 1s ease-in-out;
+}
+
+.description ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.description ul li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    color: #e0e0e0;
+}
+
+.description ul li::before {
+    content: '✔️';
+    position: absolute;
+    left: 0;
+    color: #ff9a9e;
+}
+
+/* Button Container Styling */
+.button-container {
+    text-align: right;
+    margin-top: 40px;
+}
+
+.signup-button {
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    color: #1e3c72;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255, 154, 158, 0.3);
+    animation: bounce 2s infinite;
+}
+
+.signup-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(255, 154, 158, 0.5);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .description h2 {
+        font-size: 1.8rem;
+    }
+
+    .description p {
+        font-size: 1rem;
+    }
+
+    .signup-button {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .description h2 {
+        font-size: 1.5rem;
+    }
+
+    .description p {
+        font-size: 0.9rem;
+    }
+
+    .signup-button {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Additional Styling for Smoothness */
+.main-content {
+    transition: all 0.5s ease;
+}
+
+.description ul li {
+    transition: all 0.3s ease;
+}
+
+.description ul li:hover {
+    transform: translateX(10px);
+    color: #fff;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(90deg, #fad0c4, #ff9a9e);
+}
